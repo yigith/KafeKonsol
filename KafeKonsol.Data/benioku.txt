@@ -18,7 +18,7 @@ Siparis
 * MasaNo: int
 * Durum: SiparisDurum
 * OdenenTutar: decimal
-* AcilisZamani: DateTime?
+* AcilisZamani: DateTime
 * KapanisZamani: DateTime?
 * SiparisDetaylar: List<SiparisDetay>
 * ToplamTutarTL: string-readonly
