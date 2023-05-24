@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
-            label1 = new Label();
             dataGridView1 = new DataGridView();
+            label1 = new Label();
             dataGridView2 = new DataGridView();
             label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -61,15 +61,6 @@
             splitContainer1.SplitterDistance = 188;
             splitContainer1.TabIndex = 0;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(3, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(54, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Siparişler";
-            // 
             // dataGridView1
             // 
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -79,6 +70,15 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(565, 158);
             dataGridView1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(3, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(54, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Siparişler";
             // 
             // dataGridView2
             // 
@@ -106,6 +106,7 @@
             ClientSize = new Size(571, 376);
             Controls.Add(splitContainer1);
             Name = "GecmisSiparislerForm";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Geçmiş Siparişler";
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel1.PerformLayout();
