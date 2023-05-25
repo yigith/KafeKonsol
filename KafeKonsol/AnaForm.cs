@@ -63,5 +63,15 @@ namespace KafeKonsol
                 lviTiklanan.ImageKey = "bos";
             }
         }
+
+        private void tsmiGecmisSiparisler_Click(object sender, EventArgs e)
+        {
+            new GecmisSiparislerForm(db).ShowDialog();
+        }
+
+        private void tsmiUrunler_Click(object sender, EventArgs e)
+        {
+            new UrunlerForm(db).ShowDialog();
+        }
     }
 }
