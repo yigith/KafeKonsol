@@ -28,246 +28,262 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            lblMasaNo = new Label();
-            label5 = new Label();
-            lblOdemeTutari = new Label();
-            cboUrun = new ComboBox();
-            cboMasaNo = new ComboBox();
-            nudAdet = new NumericUpDown();
-            btnEkle = new Button();
-            btnMasaTasi = new Button();
-            btnIptal = new Button();
-            btnOdemeAl = new Button();
-            btnAnasayfayaDon = new Button();
-            dgvDetaylar = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)nudAdet).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvDetaylar).BeginInit();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblMasaNo = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblOdemeTutari = new System.Windows.Forms.Label();
+            this.cboUrun = new System.Windows.Forms.ComboBox();
+            this.cboMasaNo = new System.Windows.Forms.ComboBox();
+            this.nudAdet = new System.Windows.Forms.NumericUpDown();
+            this.btnEkle = new System.Windows.Forms.Button();
+            this.btnMasaTasi = new System.Windows.Forms.Button();
+            this.btnIptal = new System.Windows.Forms.Button();
+            this.btnOdemeAl = new System.Windows.Forms.Button();
+            this.btnAnasayfayaDon = new System.Windows.Forms.Button();
+            this.dgvDetaylar = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAdet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetaylar)).BeginInit();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(33, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Ürün";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(33, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ürün";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(187, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(32, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Adet";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(187, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Adet";
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label3.AutoSize = true;
-            label3.Location = new Point(650, 9);
-            label3.Name = "label3";
-            label3.Size = new Size(54, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Masa No";
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(650, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Masa No";
             // 
             // lblMasaNo
             // 
-            lblMasaNo.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            lblMasaNo.BackColor = Color.Tomato;
-            lblMasaNo.Font = new Font("Arial Black", 72F, FontStyle.Regular, GraphicsUnit.Point);
-            lblMasaNo.ForeColor = Color.White;
-            lblMasaNo.Location = new Point(496, 56);
-            lblMasaNo.Name = "lblMasaNo";
-            lblMasaNo.Size = new Size(304, 195);
-            lblMasaNo.TabIndex = 3;
-            lblMasaNo.Text = "00";
-            lblMasaNo.TextAlign = ContentAlignment.MiddleCenter;
+            this.lblMasaNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMasaNo.BackColor = System.Drawing.Color.Tomato;
+            this.lblMasaNo.Font = new System.Drawing.Font("Arial Black", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMasaNo.ForeColor = System.Drawing.Color.White;
+            this.lblMasaNo.Location = new System.Drawing.Point(496, 56);
+            this.lblMasaNo.Name = "lblMasaNo";
+            this.lblMasaNo.Size = new System.Drawing.Size(304, 195);
+            this.lblMasaNo.TabIndex = 3;
+            this.lblMasaNo.Text = "00";
+            this.lblMasaNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.Right;
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(550, 284);
-            label5.Name = "label5";
-            label5.Size = new Size(131, 25);
-            label5.TabIndex = 4;
-            label5.Text = "Ödeme Tutarı:";
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(550, 284);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(131, 25);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Ödeme Tutarı:";
             // 
             // lblOdemeTutari
             // 
-            lblOdemeTutari.Anchor = AnchorStyles.Right;
-            lblOdemeTutari.AutoSize = true;
-            lblOdemeTutari.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblOdemeTutari.Location = new Point(687, 284);
-            lblOdemeTutari.Name = "lblOdemeTutari";
-            lblOdemeTutari.Size = new Size(56, 25);
-            lblOdemeTutari.TabIndex = 5;
-            lblOdemeTutari.Text = "₺0,00";
+            this.lblOdemeTutari.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblOdemeTutari.AutoSize = true;
+            this.lblOdemeTutari.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblOdemeTutari.Location = new System.Drawing.Point(687, 284);
+            this.lblOdemeTutari.Name = "lblOdemeTutari";
+            this.lblOdemeTutari.Size = new System.Drawing.Size(56, 25);
+            this.lblOdemeTutari.TabIndex = 5;
+            this.lblOdemeTutari.Text = "₺0,00";
             // 
             // cboUrun
             // 
-            cboUrun.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboUrun.FormattingEnabled = true;
-            cboUrun.Location = new Point(12, 27);
-            cboUrun.Name = "cboUrun";
-            cboUrun.Size = new Size(169, 23);
-            cboUrun.TabIndex = 6;
+            this.cboUrun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboUrun.FormattingEnabled = true;
+            this.cboUrun.Location = new System.Drawing.Point(12, 27);
+            this.cboUrun.Name = "cboUrun";
+            this.cboUrun.Size = new System.Drawing.Size(169, 23);
+            this.cboUrun.TabIndex = 6;
             // 
             // cboMasaNo
             // 
-            cboMasaNo.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            cboMasaNo.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboMasaNo.FormattingEnabled = true;
-            cboMasaNo.Location = new Point(650, 27);
-            cboMasaNo.Name = "cboMasaNo";
-            cboMasaNo.Size = new Size(69, 23);
-            cboMasaNo.TabIndex = 7;
+            this.cboMasaNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboMasaNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMasaNo.FormattingEnabled = true;
+            this.cboMasaNo.Location = new System.Drawing.Point(650, 27);
+            this.cboMasaNo.Name = "cboMasaNo";
+            this.cboMasaNo.Size = new System.Drawing.Size(69, 23);
+            this.cboMasaNo.TabIndex = 7;
             // 
             // nudAdet
             // 
-            nudAdet.Location = new Point(187, 27);
-            nudAdet.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            nudAdet.Name = "nudAdet";
-            nudAdet.Size = new Size(68, 23);
-            nudAdet.TabIndex = 8;
-            nudAdet.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            this.nudAdet.Location = new System.Drawing.Point(187, 27);
+            this.nudAdet.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudAdet.Name = "nudAdet";
+            this.nudAdet.Size = new System.Drawing.Size(68, 23);
+            this.nudAdet.TabIndex = 8;
+            this.nudAdet.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // btnEkle
             // 
-            btnEkle.Location = new Point(261, 27);
-            btnEkle.Name = "btnEkle";
-            btnEkle.Size = new Size(75, 23);
-            btnEkle.TabIndex = 9;
-            btnEkle.Text = "EKLE";
-            btnEkle.UseVisualStyleBackColor = true;
-            btnEkle.Click += btnEkle_Click;
+            this.btnEkle.Location = new System.Drawing.Point(261, 27);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(75, 23);
+            this.btnEkle.TabIndex = 9;
+            this.btnEkle.Text = "EKLE";
+            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnMasaTasi
             // 
-            btnMasaTasi.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnMasaTasi.Location = new Point(725, 27);
-            btnMasaTasi.Name = "btnMasaTasi";
-            btnMasaTasi.Size = new Size(75, 23);
-            btnMasaTasi.TabIndex = 10;
-            btnMasaTasi.Text = "TAŞI";
-            btnMasaTasi.UseVisualStyleBackColor = true;
+            this.btnMasaTasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMasaTasi.Location = new System.Drawing.Point(725, 27);
+            this.btnMasaTasi.Name = "btnMasaTasi";
+            this.btnMasaTasi.Size = new System.Drawing.Size(75, 23);
+            this.btnMasaTasi.TabIndex = 10;
+            this.btnMasaTasi.Text = "TAŞI";
+            this.btnMasaTasi.UseVisualStyleBackColor = true;
+            this.btnMasaTasi.Click += new System.EventHandler(this.btnMasaTasi_Click);
             // 
             // btnIptal
             // 
-            btnIptal.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnIptal.Location = new Point(496, 344);
-            btnIptal.Name = "btnIptal";
-            btnIptal.Size = new Size(149, 46);
-            btnIptal.TabIndex = 11;
-            btnIptal.Text = "SİPARİŞ İPTAL";
-            btnIptal.UseVisualStyleBackColor = true;
-            btnIptal.Click += btnIptal_Click;
+            this.btnIptal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnIptal.Location = new System.Drawing.Point(496, 344);
+            this.btnIptal.Name = "btnIptal";
+            this.btnIptal.Size = new System.Drawing.Size(149, 46);
+            this.btnIptal.TabIndex = 11;
+            this.btnIptal.Text = "SİPARİŞ İPTAL";
+            this.btnIptal.UseVisualStyleBackColor = true;
+            this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // btnOdemeAl
             // 
-            btnOdemeAl.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnOdemeAl.Location = new Point(651, 344);
-            btnOdemeAl.Name = "btnOdemeAl";
-            btnOdemeAl.Size = new Size(149, 46);
-            btnOdemeAl.TabIndex = 12;
-            btnOdemeAl.Text = "ÖDEME AL";
-            btnOdemeAl.UseVisualStyleBackColor = true;
-            btnOdemeAl.Click += btnOdemeAl_Click;
+            this.btnOdemeAl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOdemeAl.Location = new System.Drawing.Point(651, 344);
+            this.btnOdemeAl.Name = "btnOdemeAl";
+            this.btnOdemeAl.Size = new System.Drawing.Size(149, 46);
+            this.btnOdemeAl.TabIndex = 12;
+            this.btnOdemeAl.Text = "ÖDEME AL";
+            this.btnOdemeAl.UseVisualStyleBackColor = true;
+            this.btnOdemeAl.Click += new System.EventHandler(this.btnOdemeAl_Click);
             // 
             // btnAnasayfayaDon
             // 
-            btnAnasayfayaDon.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnAnasayfayaDon.Location = new Point(496, 396);
-            btnAnasayfayaDon.Name = "btnAnasayfayaDon";
-            btnAnasayfayaDon.Size = new Size(304, 46);
-            btnAnasayfayaDon.TabIndex = 13;
-            btnAnasayfayaDon.Text = "ANASAYFAYA DÖN";
-            btnAnasayfayaDon.UseVisualStyleBackColor = true;
-            btnAnasayfayaDon.Click += btnAnasayfayaDon_Click;
+            this.btnAnasayfayaDon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAnasayfayaDon.Location = new System.Drawing.Point(496, 396);
+            this.btnAnasayfayaDon.Name = "btnAnasayfayaDon";
+            this.btnAnasayfayaDon.Size = new System.Drawing.Size(304, 46);
+            this.btnAnasayfayaDon.TabIndex = 13;
+            this.btnAnasayfayaDon.Text = "ANASAYFAYA DÖN";
+            this.btnAnasayfayaDon.UseVisualStyleBackColor = true;
+            this.btnAnasayfayaDon.Click += new System.EventHandler(this.btnAnasayfayaDon_Click);
             // 
             // dgvDetaylar
             // 
-            dgvDetaylar.AllowUserToAddRows = false;
-            dgvDetaylar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dgvDetaylar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvDetaylar.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dgvDetaylar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDetaylar.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
-            dgvDetaylar.Location = new Point(12, 56);
-            dgvDetaylar.Name = "dgvDetaylar";
-            dgvDetaylar.ReadOnly = true;
-            dgvDetaylar.RowHeadersVisible = false;
-            dgvDetaylar.RowTemplate.Height = 25;
-            dgvDetaylar.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDetaylar.Size = new Size(467, 386);
-            dgvDetaylar.TabIndex = 14;
+            this.dgvDetaylar.AllowUserToAddRows = false;
+            this.dgvDetaylar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvDetaylar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDetaylar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetaylar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dgvDetaylar.Location = new System.Drawing.Point(12, 56);
+            this.dgvDetaylar.Name = "dgvDetaylar";
+            this.dgvDetaylar.ReadOnly = true;
+            this.dgvDetaylar.RowHeadersVisible = false;
+            this.dgvDetaylar.RowTemplate.Height = 25;
+            this.dgvDetaylar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDetaylar.Size = new System.Drawing.Size(467, 386);
+            this.dgvDetaylar.TabIndex = 14;
             // 
             // Column1
             // 
-            Column1.DataPropertyName = "UrunAd";
-            Column1.HeaderText = "Ürün";
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
+            this.Column1.DataPropertyName = "UrunAd";
+            this.Column1.HeaderText = "Ürün";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
-            Column2.DataPropertyName = "BirimFiyat";
-            Column2.HeaderText = "Fiyat";
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
+            this.Column2.DataPropertyName = "BirimFiyat";
+            this.Column2.HeaderText = "Fiyat";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            Column3.DataPropertyName = "Adet";
-            Column3.HeaderText = "Adet";
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
+            this.Column3.DataPropertyName = "Adet";
+            this.Column3.HeaderText = "Adet";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
-            Column4.DataPropertyName = "TutarTL";
-            Column4.HeaderText = "Tutar";
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
+            this.Column4.DataPropertyName = "TutarTL";
+            this.Column4.HeaderText = "Tutar";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // SiparisForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(812, 454);
-            Controls.Add(dgvDetaylar);
-            Controls.Add(btnAnasayfayaDon);
-            Controls.Add(btnOdemeAl);
-            Controls.Add(btnIptal);
-            Controls.Add(btnMasaTasi);
-            Controls.Add(btnEkle);
-            Controls.Add(nudAdet);
-            Controls.Add(cboMasaNo);
-            Controls.Add(cboUrun);
-            Controls.Add(lblOdemeTutari);
-            Controls.Add(label5);
-            Controls.Add(lblMasaNo);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            MinimumSize = new Size(684, 437);
-            Name = "SiparisForm";
-            StartPosition = FormStartPosition.CenterParent;
-            Text = "Masa 0";
-            ((System.ComponentModel.ISupportInitialize)nudAdet).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvDetaylar).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(812, 454);
+            this.Controls.Add(this.dgvDetaylar);
+            this.Controls.Add(this.btnAnasayfayaDon);
+            this.Controls.Add(this.btnOdemeAl);
+            this.Controls.Add(this.btnIptal);
+            this.Controls.Add(this.btnMasaTasi);
+            this.Controls.Add(this.btnEkle);
+            this.Controls.Add(this.nudAdet);
+            this.Controls.Add(this.cboMasaNo);
+            this.Controls.Add(this.cboUrun);
+            this.Controls.Add(this.lblOdemeTutari);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblMasaNo);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(684, 437);
+            this.Name = "SiparisForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Masa 0";
+            ((System.ComponentModel.ISupportInitialize)(this.nudAdet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetaylar)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

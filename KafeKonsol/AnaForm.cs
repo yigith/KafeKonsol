@@ -71,11 +71,32 @@ namespace KafeKonsol
 
             // SiparisForm'u bu siparis nesnesiyle birlikte aç
             var frmSiparis = new SiparisForm(db, siparis);
+            frmSiparis.MasaTasindi += FrmSiparis_MasaTasindi;
             frmSiparis.ShowDialog();
 
             if (siparis.Durum != SiparisDurum.Aktif)
             {
                 lviTiklanan.ImageKey = "bos";
+            }
+        }
+
+        private void FrmSiparis_MasaTasindi(object? sender, MasaTasindiEventArgs e)
+        {
+            foreach (ListViewItem item in lvwMasalar.Items)
+            {
+                int masaNo = (int)item.Tag;
+
+                if (masaNo == e.EskiMasaNo)
+                {
+                    item.ImageKey = "bos";
+                    item.Selected = false;
+                }
+
+                if (masaNo == e.YeniMasaNo)
+                {
+                    item.ImageKey = "dolu";
+                    item.Selected = true;
+                }
             }
         }
 
