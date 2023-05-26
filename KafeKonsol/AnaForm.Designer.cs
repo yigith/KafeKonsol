@@ -28,73 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
-            menuStrip1 = new MenuStrip();
-            tsmiUrunler = new ToolStripMenuItem();
-            tsmiGecmisSiparisler = new ToolStripMenuItem();
-            lvwMasalar = new ListView();
-            ilMasalar = new ImageList(components);
-            menuStrip1.SuspendLayout();
-            SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tsmiUrunler = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiGecmisSiparisler = new System.Windows.Forms.ToolStripMenuItem();
+            this.lvwMasalar = new System.Windows.Forms.ListView();
+            this.ilMasalar = new System.Windows.Forms.ImageList(this.components);
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { tsmiUrunler, tsmiGecmisSiparisler });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(683, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiUrunler,
+            this.tsmiGecmisSiparisler});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(683, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // tsmiUrunler
             // 
-            tsmiUrunler.Name = "tsmiUrunler";
-            tsmiUrunler.Size = new Size(58, 20);
-            tsmiUrunler.Text = "Ürünler";
-            tsmiUrunler.Click += tsmiUrunler_Click;
+            this.tsmiUrunler.Name = "tsmiUrunler";
+            this.tsmiUrunler.Size = new System.Drawing.Size(58, 20);
+            this.tsmiUrunler.Text = "Ürünler";
+            this.tsmiUrunler.Click += new System.EventHandler(this.tsmiUrunler_Click);
             // 
             // tsmiGecmisSiparisler
             // 
-            tsmiGecmisSiparisler.Name = "tsmiGecmisSiparisler";
-            tsmiGecmisSiparisler.Size = new Size(108, 20);
-            tsmiGecmisSiparisler.Text = "Geçmiş Siparişler";
-            tsmiGecmisSiparisler.Click += tsmiGecmisSiparisler_Click;
+            this.tsmiGecmisSiparisler.Name = "tsmiGecmisSiparisler";
+            this.tsmiGecmisSiparisler.Size = new System.Drawing.Size(108, 20);
+            this.tsmiGecmisSiparisler.Text = "Geçmiş Siparişler";
+            this.tsmiGecmisSiparisler.Click += new System.EventHandler(this.tsmiGecmisSiparisler_Click);
             // 
             // lvwMasalar
             // 
-            lvwMasalar.Dock = DockStyle.Fill;
-            lvwMasalar.LargeImageList = ilMasalar;
-            lvwMasalar.Location = new Point(0, 24);
-            lvwMasalar.Name = "lvwMasalar";
-            lvwMasalar.Size = new Size(683, 444);
-            lvwMasalar.TabIndex = 1;
-            lvwMasalar.UseCompatibleStateImageBehavior = false;
-            lvwMasalar.DoubleClick += lvwMasalar_DoubleClick;
+            this.lvwMasalar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvwMasalar.LargeImageList = this.ilMasalar;
+            this.lvwMasalar.Location = new System.Drawing.Point(0, 24);
+            this.lvwMasalar.Name = "lvwMasalar";
+            this.lvwMasalar.Size = new System.Drawing.Size(683, 444);
+            this.lvwMasalar.TabIndex = 1;
+            this.lvwMasalar.UseCompatibleStateImageBehavior = false;
+            this.lvwMasalar.DoubleClick += new System.EventHandler(this.lvwMasalar_DoubleClick);
             // 
             // ilMasalar
             // 
-            ilMasalar.ColorDepth = ColorDepth.Depth8Bit;
-            ilMasalar.ImageStream = (ImageListStreamer)resources.GetObject("ilMasalar.ImageStream");
-            ilMasalar.TransparentColor = Color.Transparent;
-            ilMasalar.Images.SetKeyName(0, "bos");
-            ilMasalar.Images.SetKeyName(1, "dolu");
+            this.ilMasalar.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.ilMasalar.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilMasalar.ImageStream")));
+            this.ilMasalar.TransparentColor = System.Drawing.Color.Transparent;
+            this.ilMasalar.Images.SetKeyName(0, "bos");
+            this.ilMasalar.Images.SetKeyName(1, "dolu");
             // 
             // AnaForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(683, 468);
-            Controls.Add(lvwMasalar);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
-            Name = "AnaForm";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Kafe Konsol";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(683, 468);
+            this.Controls.Add(this.lvwMasalar);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "AnaForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Kafe Konsol";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AnaForm_FormClosing);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -28,118 +28,152 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            btnEkle = new Button();
-            txtUrunAd = new TextBox();
-            nudBirimFiyat = new NumericUpDown();
-            dgvUrunler = new DataGridView();
-            btnIptal = new Button();
-            btnDuzenle = new Button();
-            ((System.ComponentModel.ISupportInitialize)nudBirimFiyat).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvUrunler).BeginInit();
-            SuspendLayout();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnEkle = new System.Windows.Forms.Button();
+            this.txtUrunAd = new System.Windows.Forms.TextBox();
+            this.nudBirimFiyat = new System.Windows.Forms.NumericUpDown();
+            this.dgvUrunler = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnIptal = new System.Windows.Forms.Button();
+            this.btnDuzenle = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBirimFiyat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).BeginInit();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(54, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Ürün Adı";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ürün Adı";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(155, 8);
-            label2.Name = "label2";
-            label2.Size = new Size(83, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Birim Fiyatı (₺)";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(155, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Birim Fiyatı (₺)";
             // 
             // btnEkle
             // 
-            btnEkle.Location = new Point(244, 27);
-            btnEkle.Name = "btnEkle";
-            btnEkle.Size = new Size(75, 23);
-            btnEkle.TabIndex = 2;
-            btnEkle.Text = "EKLE";
-            btnEkle.UseVisualStyleBackColor = true;
-            btnEkle.Click += btnEkle_Click;
+            this.btnEkle.Location = new System.Drawing.Point(244, 27);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(75, 23);
+            this.btnEkle.TabIndex = 2;
+            this.btnEkle.Text = "EKLE";
+            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // txtUrunAd
             // 
-            txtUrunAd.Location = new Point(12, 27);
-            txtUrunAd.Name = "txtUrunAd";
-            txtUrunAd.Size = new Size(137, 23);
-            txtUrunAd.TabIndex = 3;
+            this.txtUrunAd.Location = new System.Drawing.Point(12, 27);
+            this.txtUrunAd.Name = "txtUrunAd";
+            this.txtUrunAd.Size = new System.Drawing.Size(137, 23);
+            this.txtUrunAd.TabIndex = 3;
             // 
             // nudBirimFiyat
             // 
-            nudBirimFiyat.DecimalPlaces = 2;
-            nudBirimFiyat.Location = new Point(155, 27);
-            nudBirimFiyat.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
-            nudBirimFiyat.Name = "nudBirimFiyat";
-            nudBirimFiyat.Size = new Size(83, 23);
-            nudBirimFiyat.TabIndex = 4;
+            this.nudBirimFiyat.DecimalPlaces = 2;
+            this.nudBirimFiyat.Location = new System.Drawing.Point(155, 27);
+            this.nudBirimFiyat.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.nudBirimFiyat.Name = "nudBirimFiyat";
+            this.nudBirimFiyat.Size = new System.Drawing.Size(83, 23);
+            this.nudBirimFiyat.TabIndex = 4;
             // 
             // dgvUrunler
             // 
-            dgvUrunler.AllowUserToAddRows = false;
-            dgvUrunler.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dgvUrunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUrunler.Location = new Point(12, 57);
-            dgvUrunler.MultiSelect = false;
-            dgvUrunler.Name = "dgvUrunler";
-            dgvUrunler.ReadOnly = true;
-            dgvUrunler.RowHeadersVisible = false;
-            dgvUrunler.RowTemplate.Height = 25;
-            dgvUrunler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUrunler.Size = new Size(452, 266);
-            dgvUrunler.TabIndex = 5;
+            this.dgvUrunler.AllowUserToAddRows = false;
+            this.dgvUrunler.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvUrunler.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUrunler.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
+            this.dgvUrunler.Location = new System.Drawing.Point(12, 57);
+            this.dgvUrunler.MultiSelect = false;
+            this.dgvUrunler.Name = "dgvUrunler";
+            this.dgvUrunler.ReadOnly = true;
+            this.dgvUrunler.RowHeadersVisible = false;
+            this.dgvUrunler.RowTemplate.Height = 25;
+            this.dgvUrunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUrunler.Size = new System.Drawing.Size(452, 266);
+            this.dgvUrunler.TabIndex = 5;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "UrunAd";
+            this.Column1.HeaderText = "Ürün Adı";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 79;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "BirimFiyat";
+            dataGridViewCellStyle1.Format = "c2";
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column2.HeaderText = "Birim Fiyatı";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 91;
             // 
             // btnIptal
             // 
-            btnIptal.Location = new Point(325, 27);
-            btnIptal.Name = "btnIptal";
-            btnIptal.Size = new Size(75, 23);
-            btnIptal.TabIndex = 6;
-            btnIptal.Text = "İPTAL";
-            btnIptal.UseVisualStyleBackColor = true;
-            btnIptal.Visible = false;
-            btnIptal.Click += btnIptal_Click;
+            this.btnIptal.Location = new System.Drawing.Point(325, 27);
+            this.btnIptal.Name = "btnIptal";
+            this.btnIptal.Size = new System.Drawing.Size(75, 23);
+            this.btnIptal.TabIndex = 6;
+            this.btnIptal.Text = "İPTAL";
+            this.btnIptal.UseVisualStyleBackColor = true;
+            this.btnIptal.Visible = false;
+            this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // btnDuzenle
             // 
-            btnDuzenle.Location = new Point(389, 329);
-            btnDuzenle.Name = "btnDuzenle";
-            btnDuzenle.Size = new Size(75, 23);
-            btnDuzenle.TabIndex = 7;
-            btnDuzenle.Text = "DÜZENLE";
-            btnDuzenle.UseVisualStyleBackColor = true;
-            btnDuzenle.Click += btnDuzenle_Click;
+            this.btnDuzenle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDuzenle.Location = new System.Drawing.Point(389, 329);
+            this.btnDuzenle.Name = "btnDuzenle";
+            this.btnDuzenle.Size = new System.Drawing.Size(75, 23);
+            this.btnDuzenle.TabIndex = 7;
+            this.btnDuzenle.Text = "DÜZENLE";
+            this.btnDuzenle.UseVisualStyleBackColor = true;
+            this.btnDuzenle.Click += new System.EventHandler(this.btnDuzenle_Click);
             // 
             // UrunlerForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(476, 363);
-            Controls.Add(btnDuzenle);
-            Controls.Add(btnIptal);
-            Controls.Add(dgvUrunler);
-            Controls.Add(nudBirimFiyat);
-            Controls.Add(txtUrunAd);
-            Controls.Add(btnEkle);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "UrunlerForm";
-            StartPosition = FormStartPosition.CenterParent;
-            Text = "Ürünler";
-            ((System.ComponentModel.ISupportInitialize)nudBirimFiyat).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvUrunler).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(476, 363);
+            this.Controls.Add(this.btnDuzenle);
+            this.Controls.Add(this.btnIptal);
+            this.Controls.Add(this.dgvUrunler);
+            this.Controls.Add(this.nudBirimFiyat);
+            this.Controls.Add(this.txtUrunAd);
+            this.Controls.Add(this.btnEkle);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Name = "UrunlerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Ürünler";
+            ((System.ComponentModel.ISupportInitialize)(this.nudBirimFiyat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -156,5 +190,7 @@
         private DataGridView dgvUrunler;
         private Button btnIptal;
         private Button btnDuzenle;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
     }
 }
